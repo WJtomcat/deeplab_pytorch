@@ -161,9 +161,6 @@ class Mobilenet_deeplabv3(nn.Module):
 
     self.upsample = nn.UpsamplingBilinear2d(size=(513, 513))
 
-
-
-
   def forward(self, x):
     feature = self.basenet(x)
 
